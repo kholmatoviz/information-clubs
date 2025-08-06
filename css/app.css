@@ -29,7 +29,6 @@ body{
 #loginBtn {
     padding: 10px 20px;
     border-radius: 5px;
-    border: 2px solid #ccc;
     background-color: blueviolet;
     color: #fff;
     cursor: pointer;
