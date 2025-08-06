@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+#clubName {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#loginBtn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: blueviolet;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#loginBtn:hover {
+    background-color: #fff;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    display: none;
+}
+
+.teamName {
+    text-align: center;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#positionFilter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#positionFilter button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: blueviolet;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 10px;
+}
+
+#positionFilter button:hover {
+    background-color: #fff;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}
+
+.teamHeader {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.teamHeader button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.teamHeader button:hover {
+    background-color: #fff;
+    color: red;
+    border: 2px solid red;
+}
+
+.sellBtn {
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sellBtn:hover {
+    background-color: #fff;
+    color: red;
+    border: 2px solid red;
+}
+
+.teamInfo {
+    text-align: center;
+}
+
+.player {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.player img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.player p {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football-Kaya</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="login" style="padding: 20px;">
+        <img style="max-width: 100%; height: auto;" src="./images/clubsImage.jpeg" alt="logo">
+        <div id="exmple">Write like: PSG, MYU, BAYERN, CITY, REAL, BARCA, LIVERPOOL</div>
+        <form style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <input id="clubName" autocomplete="off" type="text" placeholder="Your favourite team">
+            <button id="loginBtn" type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="team">
+            <div class="teamHeader">
+                <h2 class="teamName"></h2>
+                <p class="teamInfo"></p>
+                <button id="logout">Logout</button>
+            </div>
+            <div id="filter">
+                <div id="positionFilter">
+                    <button value="all">All</button>
+                    <button value="goalkeeper">Goalkeeper</button>
+                    <button value="defender">Defender</button>
+                    <button value="midfielder">Midfielder</button>
+                    <button value="forward">Forward</button>
+                </div>
+            </div>
+            <div class="players"></div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
